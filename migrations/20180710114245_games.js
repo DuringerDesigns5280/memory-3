@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-    return knex.schema.createTable('game', (game) => {
+    return knex.schema.createTable('game', (table) => {
       table.increments('id')
       table.text('name')
       table.text('developer')
